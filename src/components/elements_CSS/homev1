@@ -1,0 +1,381 @@
+html{
+    scroll-behavior: smooth;
+
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "main   main   main   main"
+    "main   main   main   main"
+    "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+
+.header{
+    background-color: #94B3FD50;
+    grid-area: header;
+    display: grid;
+    height: 20vh;
+    grid-template-areas: 
+    "form form form"
+    "back pg   next";
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+}
+.create{
+    width:100vw;
+    height: 2.2rem;
+    border-end-end-radius: 1rem;
+    border: 1px solid #00000070;
+    background-color: #94B3FD50 ;
+    font-size: 1.3rem;
+    color: #ffffff;
+    text-shadow: 3px 2px 2px #000000;
+    font-weight: bold;
+    box-shadow: 2px 2px #000000;
+
+}
+.link{
+    text-decoration:none;
+}
+.form{
+    grid-area: form;
+    justify-self: center;
+}
+.form button{
+    border-radius: 1rem;
+    margin-left: .5rem;
+    margin-top: .3rem;
+    width: 6rem;
+    border: 3px solid #94B3FD;
+    box-shadow: 2px 2px #000000;
+    margin-bottom: .5rem;
+
+    
+}
+.form input[type='submit']{
+    border-radius: 1rem;
+    margin-left: 3.8rem;
+    margin-bottom: .5rem;
+    width: 6rem;
+    border: 3px solid #94B3FD;
+    box-shadow: 2px 2px #000000;
+
+    
+}
+.form input[type='text']{
+    display: block;
+    width: 20rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: .1rem solid #000000;
+    text-align: center;
+    margin-top: 1rem;
+    border: 3px solid #94B3FD;
+    box-shadow: 2px 2px #000000;
+
+}
+.back{
+    grid-area: back;
+    justify-self: end;
+    border-radius: 2rem;
+    border: 3px solid #94B3FD;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 2px 2px #000000;
+
+ 
+}
+.next{
+    grid-area: next;
+    justify-self: start;
+    border-radius: 2rem;
+    border: 3px solid #94B3FD;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 2px 2px #000000;
+
+    
+}
+.pg{
+    grid-area: pg;
+    justify-self: center;
+}
+.main{
+    grid-area: main;
+    height: 70vh;
+
+}
+.footer{
+    grid-area: footer;
+    background-color: #94B3FD50;
+    height: 100%;
+    position: sticky;
+    bottom: 0;
+
+}
+.menuclose{
+    display: none;
+    
+}
+
+.menu{
+    background-color: #00000099;
+    position: absolute;
+    width: 70vw;
+    height: 35rem;
+    margin-top: 27rem;
+    border: .2rem solid #94B3FD;
+    border-end-end-radius: 4rem ;
+    box-shadow: 4px 5px 3px #1E316390;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    color: #ffffff;
+    gap: .4rem;
+}
+.menu select{
+    width: 11rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px #ffffff70;
+
+}
+.menu :nth-child(1){
+    margin-top: 1rem;
+}
+
+.menu button{
+    border-radius: 2rem;
+    border: 1px solid #ffffff;
+    width: 1fr;
+    box-shadow: 2px 2px 2px #ffffff70;
+
+}
+.search{
+    width: 9rem;
+    border-radius: 1rem;
+    border: 1px solid #ffffff;
+    box-shadow: 2px 2px 2px #ffffff70;
+
+}
+.btn_menu{
+    background-color: #ffffff10;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: 0;
+    position: absolute;
+    margin-left: 86vw;
+    margin-top: 42vh;
+   
+}
+
+.btn_menu :nth-child(1){
+    width: 2rem;
+    height: .4rem;
+    background-color: #000000;
+    margin-bottom: .3rem;
+    margin-right: .5rem;
+    border-radius: .2rem;
+}
+.btn_menu :nth-child(2){
+    width: 2rem;
+    height: .4rem;
+    background-color: #000000;
+    border-radius: .2rem;
+
+}
+.btn_menu :nth-child(3){
+    width: 2rem;
+    height: .4rem;
+    background-color: #000000;
+    margin-top: .3rem;
+    border-radius: .2rem;
+
+}
+
+@media screen and (min-width:720px ){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4 1fr);
+        grid-template-rows: repeat(12 1fr);
+        grid-template-areas: 
+        "header   header   header   header"
+        "header   header   header   header"
+        "  main     main     main     main"
+        "  main     main     main     main"
+        "  main     main     main     main"
+        "  main     main     main     main"
+        "  main     main     main     main"
+        "  main     main     main     main"
+        "  main     main     main     main"
+        "  main     main     main     main"
+        "footer   footer   footer   footer"
+        "footer   footer   footer   footer"
+        ;
+     
+    }
+    .header{
+        background-color: #94B3FD50;
+        grid-area: header;
+        display: grid;
+        height: 20vh;
+        grid-template-areas: 
+        "form form form"
+        "back pg   next";
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+    .form{
+        grid-area: form;
+        justify-self: center;
+    }
+    .form button{
+        border-radius: 1rem;
+        margin-left: .5rem;
+        margin-top: .3rem;
+        border: 3px solid #94B3FD;
+        width: 6rem;
+        cursor: pointer;
+
+    }
+    .form input[type='submit']{
+        border-radius: 1rem;
+        margin-left: 13.5rem;
+        width: 6rem;
+        border: 3px solid #94B3FD;
+        cursor: pointer;
+
+            
+    }
+    .form input[type='text']{
+        display: block;
+        width: 40rem;
+        height: 2rem;
+        border-radius: 1rem;
+        border: 3px solid #94B3FD;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .back{
+        width: 10vw;
+        grid-area: back;
+        justify-self: start;
+        border-radius: 2rem;
+        border: 3px solid #94B3FD;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+
+     
+    }
+    .next{
+        width: 10vw;
+        grid-area: next;
+        justify-self: end;
+        border-radius: 2rem;
+        border: 3px solid #94B3FD;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+
+        
+    }
+    .pg{
+        grid-area: pg;
+        justify-self: center;
+    }
+    .main{
+        
+        grid-area: main;
+
+    }
+    .menu{
+        width: 25vw;
+        height: 87vh;
+        margin-top: 26rem;
+        color: #ffffff;
+
+    }
+    .footer{
+        background-color: #94B3FD50;
+        grid-area: footer;
+
+    }
+    .btn_menu{
+        background-color: #ffffff01;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 1rem;
+        border: 0;
+        position: absolute;
+        margin-left: 90vw;
+        margin-top: -35vh;
+        cursor: pointer;
+    }
+    
+    .btn_menu :nth-child(1){
+        width: 3rem;
+        height: .4rem;
+        background-color: #000000;
+        margin-bottom: .4rem;
+        margin-right: .5rem;
+        border-radius: .2rem;
+    }
+    
+    .btn_menu :nth-child(2){
+        width: 3rem;
+        height: .4rem;
+        background-color: #000000;
+        border-radius: .2rem;
+    
+    }
+    .btn_menu :nth-child(3){
+        width: 3rem;
+        height: .4rem;
+        background-color: #000000;
+        margin-top: .4rem;
+        border-radius: .2rem;
+    
+    }
+    .create{
+        width:20vw;
+        height: 3rem;
+        justify-self: end;
+        border-radius: 1rem;
+        border: .1px solid #ffffff;
+        background-color: #94B3FD50 ;
+        font-size: 1.3rem;
+        color: #ffffff;
+        text-shadow: 3px 2px 2px #000000;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .create:hover{
+        width:20vw;
+        height: 3rem;
+        justify-self: end;
+        border-radius: 1rem;
+        border: .1px solid #000000;
+        background-color: #00000060 ;
+        font-size: 1.3rem;
+        color: #ffffff;
+        text-shadow: 3px 2px 2px #000000;
+        font-weight: bold;
+        cursor: pointer;
+    }
+   
+
+}

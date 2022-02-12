@@ -1,0 +1,202 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;   
+    /* background-color: #ffffff; */
+}
+.btn_home{
+  margin-right: 18rem;
+  margin-top: .4rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #ffffff;
+  font-weight: bold;
+  box-shadow: 3px 3px #00000030;
+
+
+}
+.link{
+    text-decoration: none;
+}
+.title{
+    margin-bottom: .5rem ;
+    font-size: 1rem;
+}
+
+.name_input{
+    display: block;
+    margin: auto;
+    border-radius: 1rem;
+    border: .1rem solid steelblue;
+    box-shadow: 3px 3px #000000;
+    
+
+
+}
+.diff{
+    display: block;
+    margin-top: .5rem;
+
+
+}
+.diff_select{
+    display: block;
+    margin: auto;
+    border-radius: 1rem;
+    border: .1rem solid steelblue;
+    box-shadow: 3px 3px #000000;
+
+
+}
+.dura{
+    display: block;
+    margin-top: .5rem;
+    
+}
+.dura_input{
+    display: block;
+    margin: auto;
+    border-radius: 1rem;
+    border: .1rem solid steelblue;
+    box-shadow: 3px 3px #000000;
+
+
+}
+.seas{
+    display: block;
+    margin-top: .5rem;
+}
+.seas_input{
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border: .1rem solid steelblue;
+    box-shadow: 3px 3px #000000;
+
+
+}
+
+.add_count {
+    margin-bottom: .5rem;
+    margin-top: .6rem;
+    
+}
+.add_count button{
+    border-radius: 1rem;
+    border: .1rem solid steelblue;
+    margin: 0;
+}
+
+.btn_submit{
+    margin-top: .5rem;
+    border-radius: 1rem;
+    border: .1rem solid steelblue;
+    box-shadow: 3px 3px #000000;
+
+}
+
+
+
+
+.selectC{
+    width: 15rem;
+    height: 10rem;
+    border: none;
+   
+}
+
+.optionC{
+    width: 9rem;
+    height: 5rem;
+    margin-top: .3rem;
+    border: .2rem solid #000000;
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 2.5rem;
+}
+.addC{
+    box-shadow: 3px 3px #000000;
+}
+
+@media screen and (min-width:720px ){
+    .container{
+        height: 100vh;
+        display: flex;
+        flex-flow: column;
+        align-items:center;
+        text-align: center;  
+        font-size: 1rem; 
+        /* background-color: #ffffff; */
+    }
+    .title{
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+    .btn_home{
+        width: 6rem;
+        height: 2rem;
+        font-size: 1rem;
+        background-color: fffffff;
+       border: 1px solid #000000;
+       border-radius:2rem ;
+       margin-right: 60rem;
+       margin-top: .6rem;
+       cursor: pointer;
+       box-shadow: 2px 2px black;
+      
+      }
+      .btn_home:hover{
+        width: 6rem;
+        height: 2rem;
+        font-size: 1rem;
+        color: #ffffff;
+        background-color: #00000060;
+       border: 1px solid steelblue;
+       border-radius:2rem ;
+       margin-right: 60rem;
+       margin-top: .6rem;
+       cursor: pointer;
+      
+      }
+      .btn_submit{
+        width: 6rem;
+        height: 2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: #ffffff;
+        border: 1px solid #000000;
+        border-radius: 2rem;   
+        margin-right: -60rem;
+        cursor: pointer;
+       box-shadow: 2px 2px black;
+
+       
+    }
+    .btn_submit:hover {
+        width: 6rem;
+        height: 2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #00000060;
+        border: 1px solid steelblue;
+        border-radius: 2rem;   
+        margin-right: -60rem;
+        cursor: pointer;
+       
+    }
+    .name_input{
+        display: block;
+        margin: auto;
+        border-radius: 1rem;
+        border: .1rem solid steelblue;
+        box-shadow: 3px 3px #000000;
+    
+    
+    }
+    
+}

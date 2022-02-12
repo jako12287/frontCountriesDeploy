@@ -1,0 +1,34 @@
+.container{
+    width: 100%;
+    height: 100hv;
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "logo1 logo2";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.title{
+    grid-area: title;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    text-align:center ;
+    font-size: 1rem;
+}
+a{
+    display: grid;
+    align-content: center;
+}
+.logo1{
+    grid-area: logo1;
+    justify-self: center;
+   
+}
+.logo2{
+    grid-area: logo2;
+    justify-self: start;
+
+
+}

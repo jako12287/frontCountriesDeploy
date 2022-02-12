@@ -1,0 +1,180 @@
+.container{
+    width: 100vw;
+    height: 96.5vh;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "title    title    title    title    title    title"
+    "code     code     conti    conti    capi     capi"
+    "rescode  rescode resconti  resconti rescapi  rescapi"
+    "rescode  rescode resconti  resconti rescapi  rescapi"
+    "subr     subr     popu     popu     area     area"
+    "ressubr  ressubr  respopu  respopu  resarea  resarea"
+    "flag     flag     flag     flag     flag     flag"
+    "flagimg  flagimg  flagimg  flagimg  flagimg  flagimg "
+    "activity activity activity activity activity activity"
+    "activities activities activities activities activities activities "
+    ;
+    grid-template-columns: repeat(6 1fr);
+    grid-template-rows: repeat(10s 1fr);
+    align-content: start;
+    gap: .2rem;
+    
+}
+.title{
+    grid-area: title;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: .8rem;
+    margin-bottom: .9rem;
+}
+.code{
+    grid-area: code;
+    border: 1px solid #000000;
+
+}     
+.conti{
+    grid-area: conti;
+    border: 1px solid #000000;
+
+}    
+.capi{
+    grid-area: capi;
+    border: 1px solid #000000;
+
+}     
+.subr{
+    grid-area: subr;
+    border: 1px solid #000000;
+
+}      
+.popu{
+    grid-area: popu;
+    border: 1px solid #000000;
+
+}     
+.area{
+    grid-area: area;
+    border: 1px solid #000000;
+
+}
+.rescode{
+    grid-area: rescode;
+
+}  
+.resconti{
+    grid-area: resconti;
+
+} 
+.rescapi{
+    grid-area: rescapi;
+
+}  
+.ressubr{
+    grid-area: ressubr;
+
+}   
+.respopu{
+    grid-area: respopu;
+
+}  
+.resarea{
+    grid-area: resarea;
+
+}
+.flag{
+    grid-area: flag;
+    font-weight: bold;
+}
+.flagimg{
+    grid-area: flagimg;
+    width: auto;
+    height: 30vh;
+
+}
+.activity{
+    grid-area: activity;
+    font-weight: bold;
+}
+.activities{
+    grid-area: activities;
+    display: flex;
+    flex-flow: row;
+    font-size: .7rem;
+    justify-content: center;
+    gap: .3rem;
+    color: #ffffff;
+    margin-top: 10px;
+
+}
+.Aname{
+    border: 1px solid #000000;
+    background-color: #00000070;
+        
+}
+.Adura{
+    border: 1px solid #000000;
+    background-color: #00000070;
+
+
+}
+.Adiff{
+    border: 1px solid #000000;
+    background-color: #00000070;
+
+
+}
+.Aseas{
+    border: 1px solid #000000;
+    background-color: #00000070;
+
+
+}
+.Aresname{
+    border: 1px solid #000000;
+    color: #000000;
+        
+}
+.Aresdura{
+    border: 1px solid #000000;
+    color: #000000;
+}
+.Aresdiff{
+    border: 1px solid #000000;
+    color: #000000;
+}
+.Aresseas{
+    border: 1px solid #000000;
+    color: #000000;
+}
+.message{
+    position: absolute;
+    color: #000000;
+}
+@media screen and (min-width:720px ){
+    .container{
+        width: 100vw;
+        height: 96.5vh;
+        text-align: center;
+        display: grid;
+        grid-template-areas: 
+        "title    title    title    title    title    title"
+        "code     code     conti    conti    capi     capi"
+        "rescode  rescode resconti  resconti rescapi  rescapi"
+        "rescode  rescode resconti  resconti rescapi  rescapi"
+        "subr     subr     popu     popu     area     area"
+        "ressubr  ressubr  respopu  respopu  resarea  resarea"
+        "flag     flag     flag     flag     flag     flag"
+        "flagimg  flagimg  flagimg  flagimg  flagimg  flagimg "
+        "activity activity activity activity activity activity"
+        "activities activities activities activities activities activities "
+        ;
+        grid-template-columns: repeat(6 1fr);
+        grid-template-rows: repeat(10s 1fr);
+        align-content: start;
+        justify-content: center;
+        gap: .2rem;
+        
+    }
+}
+
